@@ -16,52 +16,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="j9I-sd-PEd">
-                                <rect key="frame" x="-247" y="-567" width="958" height="1793"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="j9I-sd-PEd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="X5n-JC-V0Z">
-                                <rect key="frame" x="15" y="68" width="384" height="588.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="X5n-JC-V0Z">
+                                <rect key="frame" x="15" y="68" width="384" height="568.5"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="l9U-N2-p30">
-                                <rect key="frame" x="15" y="687" width="384" height="160"/>
+                                <rect key="frame" x="15" y="667" width="384" height="180"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQa-G9-MM0">
-                                        <rect key="frame" x="0.0" y="0.0" width="384" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="80"/>
                                         <color key="backgroundColor" red="0.90799278019999996" green="0.31762301920000002" blue="0.47968715429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="Ja5-6x-7cT"/>
+                                            <constraint firstAttribute="height" constant="80" id="Ja5-6x-7cT"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Choice 1">
-                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Choice 1"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BPS-k4-9a5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeH-nb-9Ob">
-                                        <rect key="frame" x="0.0" y="90" width="384" height="70"/>
+                                        <rect key="frame" x="0.0" y="100" width="384" height="80"/>
                                         <color key="backgroundColor" red="0.53561741110000005" green="0.36019158359999998" blue="0.651447475" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="fH2-Wz-YCP"/>
+                                            <constraint firstAttribute="height" constant="80" id="fH2-Wz-YCP"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Choice 2">
-                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Choice 2"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X0t-sM-AKq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -69,15 +72,24 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="j9I-sd-PEd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AcX-Mx-PA9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="l9U-N2-p30" secondAttribute="bottom" constant="15" id="Dec-1m-9dm"/>
+                            <constraint firstAttribute="trailing" secondItem="j9I-sd-PEd" secondAttribute="trailing" id="Ikd-R3-fjQ"/>
                             <constraint firstItem="l9U-N2-p30" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="JAP-Da-oiu"/>
                             <constraint firstItem="X5n-JC-V0Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="K65-3M-UzS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X5n-JC-V0Z" secondAttribute="trailing" constant="15" id="Lpa-Dh-ssS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l9U-N2-p30" secondAttribute="trailing" constant="15" id="Nma-TD-Eqn"/>
+                            <constraint firstAttribute="bottom" secondItem="j9I-sd-PEd" secondAttribute="bottom" id="S4J-I9-7Wg"/>
                             <constraint firstItem="l9U-N2-p30" firstAttribute="top" secondItem="X5n-JC-V0Z" secondAttribute="bottom" constant="30.5" id="Wvo-Vo-WQB"/>
                             <constraint firstItem="X5n-JC-V0Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="qjC-ZK-gWC"/>
+                            <constraint firstItem="j9I-sd-PEd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xhF-ca-42H"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="choice1" destination="WQa-G9-MM0" id="SKO-JM-odk"/>
+                        <outlet property="choice2" destination="DeH-nb-9Ob" id="ReZ-Xx-hqC"/>
+                        <outlet property="story" destination="X5n-JC-V0Z" id="IvB-vB-FV7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
